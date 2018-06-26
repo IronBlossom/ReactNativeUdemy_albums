@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-const AlbumList = () => {
-    return (
-        <View>
-            <Text>Album Lists!!!</Text>
-        </View>
-    );
-};
+class AlbumList extends Component {
+    componentWillMount() {
+        console.log(new Date(), 'componentWillMount in AlbumList');
+    }
+
+    render() {
+        return (
+            <View>
+                <Text>Album Lists!!!</Text>
+            </View>
+        );
+    }
+}
 
 export default AlbumList;
