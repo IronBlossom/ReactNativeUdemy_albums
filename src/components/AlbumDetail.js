@@ -16,9 +16,7 @@ const AlbumDetail = ({ album }) => {
         <Card>
             <CardSection>
                 <View style={thumbnailContainerStyle} >
-                    <Image
-                        style={thumbnailStyle}
-                        source={{ uri: thumbnail_image }} />
+                    <Image style={thumbnailStyle} source={{ uri: thumbnail_image }} />
                 </View>
                 <View style={headerContentStyle}>
                     <Text style={headerTextStyle}>{title}</Text>
